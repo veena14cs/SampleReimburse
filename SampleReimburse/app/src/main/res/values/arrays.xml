@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_arrays">
+    <item> Bitjin </item>
+    <item> InfiCloud </item>
+    </string-array>
+
+    <string-array name="gender">
+        <item> Male </item>
+        <item> Female </item>
+    </string-array>
+
+    <string-array name="age">
+        <item> 24 </item>
+        <item> 25 </item>
+        <item> 26 </item>
+        <item> 27 </item>
+        <item> 28 </item>
+        <item> 29 </item>
+    </string-array>
+</resources>
