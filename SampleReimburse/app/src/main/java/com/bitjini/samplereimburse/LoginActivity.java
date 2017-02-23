@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (id)
         {
             case R.id.email_log_in_button:
-                Intent intent=new Intent(LoginActivity.this,HomePage.class);
+                Intent intent=new Intent(LoginActivity.this,SignUpActivity.class);
                 startActivity(intent);
                 break;
         }
