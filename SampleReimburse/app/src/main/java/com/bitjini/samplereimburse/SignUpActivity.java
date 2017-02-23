@@ -1,15 +1,21 @@
 package com.bitjini.samplereimburse;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class SignUpActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Button signInBtn;
     ListView listView;
+
     SignUpAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +27,14 @@ public class SignUpActivity extends AppCompatActivity {
 
     private void initViews() {
         listView=(ListView) findViewById(R.id.signUp);
+        signInBtn=(Button) findViewById(R.id.loginBtn);
 
+        initListener();
         enterDataInList();
+    }
+
+    private void initListener() {
+        signInBtn.setOnClickListener(this);
     }
 
     private void enterDataInList() {
@@ -41,8 +53,19 @@ public class SignUpActivity extends AppCompatActivity {
             beanSignUpField.setValue(values.get(i));
             arrayList.add(beanSignUpField);
         }
-        SignUpAdapter adapter=new SignUpAdapter(SignUpActivity.this,arrayList);
+        SignUpAdapter adapter=new SignUpAdapter(getApplicationContext(),arrayList);
         listView.setAdapter(adapter);
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.loginBtn:
+                Intent intent=new Intent(SignUpActivity.this,HomePage.class);
+                startActivity(intent);
+                break;
+        }
     }
 }
