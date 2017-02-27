@@ -49,6 +49,8 @@ public class HomePage extends BaseActivity implements View.OnClickListener {
             case R.id.pendingBill_button:
                 break;
             case R.id.history_button:
+                intent=new Intent(HomePage.this,History_Activity.class);
+                startActivity(intent);
                 break;
         }
 
