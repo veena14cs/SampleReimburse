@@ -5,14 +5,13 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
 import com.bitjini.samplereimburse.R;
-import com.bitjini.samplereimburse.activity.BaseActivity;
 import com.bitjini.samplereimburse.adapter.BillingAdapter;
 
 /**
  * Created by bitjini on 27/2/17.
  */
 
-public class ScanAddBill_Activity extends BaseActivity {
+public class ScanAddBill_Activity extends DrawerBaseActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
 

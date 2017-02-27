@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import com.bitjini.samplereimburse.R;
 
-public class HomePage extends BaseActivity implements View.OnClickListener {
+public class HomePage extends DrawerBaseActivity implements View.OnClickListener {
 
     Button scanBillBtn,pendingBillBtn,historyBtn;
     @Override

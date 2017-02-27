@@ -1,7 +1,6 @@
 package com.bitjini.samplereimburse.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,14 +8,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.bitjini.samplereimburse.R;
 
-public class BaseActivity extends AppCompatActivity
+public class DrawerBaseActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     protected LinearLayout fullLayout;
     protected CoordinatorLayout actContent;
@@ -83,7 +81,7 @@ public class BaseActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-         intent=new Intent(BaseActivity.this,HomePage.class);
+         intent=new Intent(DrawerBaseActivity.this,HomePage.class);
             startActivity(intent);
         } else if (id == R.id.nav_profile) {
 
