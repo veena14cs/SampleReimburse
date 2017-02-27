@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".SplashActivity"
+        <activity android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>
@@ -25,20 +25,26 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SignUpActivity"
-            android:windowSoftInputMode="adjustPan"
-
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".activity.LoginActivity" />
         <activity
-            android:name=".HomePage"
+            android:name=".activity.HomePage"
             android:label="@string/title_activity_home_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <activity
-            android:name=".ScanAddBill_Activity"
+            android:name=".activity.ScanAddBill_Activity"
             android:label="@string/start_trip"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activity.SignUpActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity
+            android:name=".activity.ActiveTrip_Activity"
+            android:label="@string/active_trip"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
     </application>
 
 </manifest>

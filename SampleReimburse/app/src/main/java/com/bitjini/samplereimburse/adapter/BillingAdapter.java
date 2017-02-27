@@ -1,4 +1,4 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.adapter;
 
 /**
  * Created by bitjini on 14/11/16.
@@ -8,6 +8,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.bitjini.samplereimburse.ActiveTrip_Fragment;
+import com.bitjini.samplereimburse.NewTrip_Fragment;
 
 /**
  * Created by bitjini on 4/11/16.

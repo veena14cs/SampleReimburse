@@ -1,4 +1,4 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.bitjini.samplereimburse.R;
+import com.bitjini.samplereimburse.adapter.SignUpAdapter;
+import com.bitjini.samplereimburse.data_model.BeanSignUpField;
 
 import java.util.ArrayList;
 

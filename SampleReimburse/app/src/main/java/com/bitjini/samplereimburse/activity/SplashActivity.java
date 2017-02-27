@@ -1,10 +1,12 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.activity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.bitjini.samplereimburse.R;
 
 public class SplashActivity extends AppCompatActivity {
 

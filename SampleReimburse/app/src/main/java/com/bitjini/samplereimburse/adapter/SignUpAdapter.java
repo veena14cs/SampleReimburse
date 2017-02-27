@@ -1,4 +1,4 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.adapter;
 
 import android.content.Context;
 import android.text.Editable;
@@ -14,13 +14,16 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import com.bitjini.samplereimburse.R;
+import com.bitjini.samplereimburse.data_model.BeanSignUpField;
+
 import java.util.ArrayList;
 
 /**
  * Created by bitjini on 23/2/17.
  */
 
-class SignUpAdapter extends BaseAdapter {
+public class SignUpAdapter extends BaseAdapter {
     Holder holder;
     Context mContext;
     String company,gender,ade;
@@ -187,12 +190,12 @@ class SignUpAdapter extends BaseAdapter {
         companyPicker.setAdapter(adapter);
         companyPicker.setSelection(adapter.getPosition("24"));
     }
+    class Holder {
+        EditText editText;
+        TextWatcher textWatcher;
+        Spinner companyPicker,genderPicker,agePicker;
+        LinearLayout layout;
+        int ref;
+    }
 
-}
- class Holder {
-    EditText editText;
-    TextWatcher textWatcher;
-    Spinner companyPicker,genderPicker,agePicker;
-    LinearLayout layout;
-    int ref;
 }

@@ -1,5 +1,6 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
@@ -12,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
+import com.bitjini.samplereimburse.R;
 
 public class BaseActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -75,11 +78,13 @@ public class BaseActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Intent intent;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+         intent=new Intent(BaseActivity.this,HomePage.class);
+            startActivity(intent);
         } else if (id == R.id.nav_profile) {
 
         } else if (id == R.id.nav_myReimbursements) {

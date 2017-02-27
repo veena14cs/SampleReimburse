@@ -1,4 +1,4 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.adapter;
 
 /**
  * Created by bitjini on 27/2/17.
@@ -9,8 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bitjini.samplereimburse.R;
 
 import java.util.ArrayList;
 
@@ -53,7 +54,7 @@ public class ActiveTripsAdapter extends RecyclerView.Adapter<ActiveTripsAdapter.
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView txtdestination,txtDate,txtCategory,txtDays,txtCost;
-        ImageView callBtn;
+
         public ViewHolder(View view) {
             super(view);
 

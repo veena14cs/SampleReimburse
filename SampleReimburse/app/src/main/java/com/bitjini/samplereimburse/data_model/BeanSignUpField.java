@@ -1,11 +1,11 @@
-package com.bitjini.samplereimburse;
+package com.bitjini.samplereimburse.data_model;
 
 /**
  * Created by bitjini on 23/2/17.
  */
 
-class BeanSignUpField {
-    String value;
+public class BeanSignUpField {
+    public String value;
 
     public String getValue() {
         return value;

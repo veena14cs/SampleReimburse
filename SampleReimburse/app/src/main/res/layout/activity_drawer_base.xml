@@ -42,7 +42,6 @@
                         android:layout_centerHorizontal="true"
                         android:background="@android:color/transparent"
                         android:layout_gravity="end"
-                        android:onClick="showPopup"
                         android:clickable="false"/>
                 </android.support.v7.widget.Toolbar>
 

@@ -1,7 +1,6 @@
 package com.bitjini.samplereimburse;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.bitjini.samplereimburse.activity.ActiveTrip_Activity;
+import com.bitjini.samplereimburse.adapter.ActiveTripsAdapter;
 
 import java.util.ArrayList;
 
@@ -69,6 +71,8 @@ public class ActiveTrip_Fragment extends android.support.v4.app.Fragment {
                     int position = rv.getChildAdapterPosition(child);
 
 
+                    Intent intent=new Intent(getActivity(),ActiveTrip_Activity.class);
+                    startActivity(intent);
                 }
 
                 return false;
