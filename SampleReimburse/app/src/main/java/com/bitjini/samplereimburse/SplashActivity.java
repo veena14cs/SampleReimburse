@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        CountDownTimer countDownTimer = new CountDownTimer(6000, 1000) {
+        CountDownTimer countDownTimer = new CountDownTimer(3000, 1000) {
             public void onTick(long millisUntilFinished) {
 
             }

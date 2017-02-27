@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delhi"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:id="@+id/destination"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day 2"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:id="@+id/numberOfDays"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14/2/2017"
+        android:layout_marginTop="25dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:id="@+id/date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sales"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/category"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.367"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:id="@+id/totalCost"/>
+
+
+</android.support.v7.widget.CardView>
